@@ -1,0 +1,376 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta http-equiv="Cache-control" content="private">
+
+        <title>Dan Job</title>
+        <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="flex-column-container header">
+            <div class="flex-row-container">
+                <div class="container-item" id="logo">
+                    <img src="{% static 'images/logo.png' %}">
+                </div>
+                <nav class="container-item flex-row-container nav">
+                    <p>Login</p>
+                    <p>Sign up</p>
+                </nav>
+            </div>
+            <div class="container-item flex-row-container underline" id="underline-header">         
+            </div>
+        </header>
+        <div id="main-container">
+            <div class="flex-column-container container-item front-page-container" id="cover-page">
+                <div class="container-item flex-row-container cover-page-items">
+                    <div class="container-item flex-column-container cover-page-item">
+                        <div class="container-item cover-page-item_text">
+                            <h2>Buy everything insurance in one place</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        </div>
+                        <div class="container-item button cover-page-button">
+                            <p>Start now </p>
+                        </div>
+                    </div>
+                    <div class="container-item cover-page-item cover-page-item_img-container">
+                        <img src="{% static 'images/notebook-smartphone.png' %}">
+                    </div>
+                </div>
+                <p id="click-to-scroll-cover">Click to scroll</p>
+                
+            </div>
+            <div class="flex-column-container container-item hidden-item" id="services-page">
+                <div class="container-item flex-column-container front-page-container">
+                    <h1 class="inner-container-heading"> Our services </h1>
+                    <div class="container-item flex-row-container services">
+                        <div class="container-item flex-column-container service">
+                            <div class="container-item flex-column-container service-description-text">
+                                <h2 class="description-heading"> Service header text</h2>
+                                <p>Lorem Ipsum </p>
+                            </div>
+                            <div class="container-item link-to-service">
+                                <p>Link</p>
+                            </div>
+                        </div>
+                        <div class="container-item flex-column-container service" >
+                            <div class="container-item flex-column-container service-description-text">
+                                <h2 class="description-heading"> Service header text</h2>
+                                <p>Lorem Ipsum </p>
+                            </div>
+                            <div class="container-item link-to-service">
+                                <p>Link</p>
+                            </div>
+                        </div>
+                        <div class="container-item flex-column-container service">
+                            <div class="container-item flex-column-container service-description-text">
+                                <h2 class="description-heading"> Service header text</h2>
+                                <p>Lorem Ipsum </p>
+                            </div>
+                            <div class="container-item link-to-service">
+                                <p>Link</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                        
+                <div class="container-item">
+                    <div class="container-item flex-column-container front-page-container">
+                        <h1 class="inner-container-heading"> Reasons to buy from us</h1>
+                        <div class="container-item flex-row-container services">
+                            <div class="container-item">
+                                <div class="container-item">
+                                    <div class="illustration-image flex-column-container">
+                                        <img src="{% static 'images/placeholder.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-item flex-column-container reasons-container">
+                                <div class="container-item flex-row-container">
+                                    <div class="container-item flex-column-container reason">
+                                        <div class="container-item flex-column-container reason-container">                                            
+                                            <img class="reason-img" src="{% static 'images/shopping-cart.png' %}">                                            
+                                            <h5>Best price</h5>
+                                            <p>Find products and services from A to Z at the best price.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="container-item flex-column-container reason">
+                                        <div class="container-item flex-column-container reason-container">
+                                            <img class="reason-img" src="{% static 'images/dollar-sign.png' %}">
+                                            <h5>Payment made easy</h5>
+                                            <p>Account debit, bank transfer, cash payment, credit card and bank slip.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-item flex-row-container">
+                                    <div class="container-item flex-column-container reason">
+                                        <div class="container-item flex-column-container reason-container">
+                                            <img class="reason-img" src="{% static 'images/lock.png' %}">
+                                            <h5>We protect your money</h5>
+                                            <p>We guarantee 100% any purchase on our platform.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="container-item flex-column-container reason">
+                                        <div class="container-item flex-column-container reason-container">
+                                            <img class="reason-img" src="{% static 'images/security.png' %}">
+                                            <h5>We protect your data</h5>
+                                            <p>Your data is safe with us with no headache of having accounts opened in multiple places.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-item flex-row-container reason-container">
+                                    <div class="container-item flex-column-container reason">
+                                        <div class="container-item flex-column-container reason-container">
+                                            <img class="reason-img" src="{% static 'images/247.png' %}">
+                                            <h5>24/7 service</h5>
+                                            <p>We are always at your disposal. Our experienced staff will assist you whenever you need.</p>
+                                        </div>
+                                    </div>
+                                    <div class="container-item flex-column-container reason">
+                                        <div class="container-item flex-column-container reason-container">
+                                            <img class="reason-img" src="{% static 'images/delivery.png' %}">
+                                            <h5>We follow until delivery</h5>
+                                            <p>We guarantee delivery of your purchase, whether it is a product or service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-item flex-row-container product-categories">
+                    <div class="container-item flex-row-container product-categories-links">
+                        <div class="product-categories-link"><p> Life insurance</p></div>
+                        <div class="product-categories-link"><p> General insurance</p></div>
+                        <div class="product-categories-link"><p> Another insurance product</p></div>
+                    </div>
+                </div>
+                <div class="container-item front-page-container front-page-container">
+                    <h1 class="inner-container-heading"> Shop in a few minutes </h1>
+                    <div class="container-item flex-row-container shopping-options-wrapper">
+                        <div class="container-item">
+                            <div class="illustration-image">
+                                <img src="{% static 'images/placeholder.png' %}">
+                            </div>
+                        </div>
+                        <div class="container-item flex-column-container shopping-options">
+                            <div class="container-item flex-row-container shopping-option">
+                                <div class="container-item shopping-option_img"><img src="{% static 'images/lens.png' %}"></div>                                
+                                <div class="container-item shopping-option_text"><p>Search everything for your children's education</p></div>
+                            </div>
+                            <div class="container-item flex-row-container shopping-option">
+                                <div class="container-item shopping-option_img"><img src="{% static 'images/shopping-cart.png' %}"></div>
+                                <div class="container-item shopping-option_text"><p>Express Checkout</p></div>
+                            </div>
+                            <div class="container-item flex-row-container shopping-option">
+                                <div class="container-item shopping-option_img"><img src="{% static 'images/cake.png' %}"></div>
+                                <div class="container-item shopping-option_text"><p>Custom shopping experience for you</p></div>
+                            </div>
+                            <div class="container-item flex-row-container shopping-option">
+                                <div class="container-item shopping-option_img"><img src="{% static 'images/people.png' %}"></div>
+                                <div class="container-item shopping-option_text"><p>Multiple students, multiple enrollments</p></div>
+                            </div>
+                            <div class="container-item button">
+                                <p>Start now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="container-item">
+                    <div class="container-item flex-column-container front-page-container">
+                        <h1 class="inner-container-heading"> How it works</h1>
+                        <div class="container-item flex-row-container how-it-works">
+                            <div class="container-item flex-column-container how-it-works_item">
+                                <div class="container-item flex-row-container how-it-works_item_head">
+                                    <div>
+                                        <img src="{% static 'images/create-account.png' %}">
+                                    </div>
+                                    <div>
+                                        <p>First step</p>
+                                        <h5>Create an account</h5>
+                                    </div>
+                                </div>
+                                <p>Once you have created your account as a guardian, 
+                                    register the student and at which institution 
+                                    you are registered with. Ready! 
+                                    Start investing in your child's education</p>
+                            </div>
+                            <div class="container-item flex-column-container how-it-works_item">
+                                <div class="container-item flex-row-container how-it-works_item_head">
+                                    <div>
+                                        <img src="{% static 'images/select.png' %}">
+                                    </div>
+                                    <div>                                
+                                        <p>Second step</p>
+                                        <h5>Select</h5>
+                                    </div>
+                                </div>
+                                <p>Select books, school materials, courses or sports, 
+                                    activities, uniforms and everything you need, 
+                                    with the assurance that they are made available by the institution.</p>
+                            </div>
+                            <div class="container-item flex-column-container how-it-works_item">
+                                <div class="container-item flex-row-container how-it-works_item_head">
+                                    <div>
+                                        <img src="{% static 'images/pay.png' %}">
+                                    </div>
+                                    <div>
+                                        <p>Third step</p>
+                                        <h5>Pay</h5>
+                                    </div>
+                                </div>
+                                <p>Select your shipping methods and payment method, 
+                                    we will be in touch with you throughout the process 
+                                    so you always know the status of your order.</p>
+                            </div>
+                            <div class="container-item flex-column-container how-it-works_item">
+                                <div class="container-item flex-row-container how-it-works_item_head">
+                                    <div>
+                                        <img src="{% static 'images/delivery.png' %}">
+                                    </div>
+                                    <div>
+                                        <p>Fourth step</p>
+                                        <h5>Recieve</h5>
+                                    </div>
+                                </div>
+                                <p>You have everything ready for the student's 
+                                    daily life at the institution. If you have any questions, 
+                                    we will be available to help you, rest assured!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="flex-column-container container-item front-page-container contacts-page hidden-item" id="contacts-page">
+                <div class="container-item flex-column-container front-page-container contact-info-wrapper">
+                    <h1 class="inner-container-heading"> Need help? </h1>
+                    <div class="container-item flex-row-container contact-info-container">                        
+                           <div class="container-item flex-column-container contact-info" >                                
+                                
+                                <div class="container-item flex-row-container contact-info_item">
+                                    <div class="container-item contact-info_img">
+                                        <img src="{% static 'images/faq.png' %}">
+                                    </div>
+                                    <div class="container-item contact-info_text">
+                                        <h5> FAQ</h5>
+                                        <p>Common questions. Common questions. Common questions.</p>   
+                                    </div>
+                                </div>        
+                                
+                                <div class="container-item flex-row-container contact-info_item">
+                                    <div class="container-item contact-info_img">
+                                        <img src="{% static 'images/telephone.png' %}">
+                                    </div>
+                                    <div class="container-item contact-info_text">
+                                        <h5> Telephone</h5>
+                                        <p>254555555</p> 
+                                        <p>lorem ipsum</p>
+                                    </div>          
+                                </div>
+                                <div class="container-item flex-row-container contact-info_item">
+                                    <div class="container-item contact-info_img">
+                                        <img src="{% static 'images/whatsapp.png' %}">
+                                    </div>
+                                    <div class="container-item contact-info_text">
+                                        <h5> WhatsApp</h5>
+                                        <p>25477775555</p> 
+                                    </div>          
+                                </div>
+                                <div class="container-item flex-row-container contact-info_item">
+                                    <div class="container-item contact-info_img">
+                                        <img src="{% static 'images/email.png' %}">
+                                    </div>
+                                    
+                                    <div class="container-item contact-info_text">
+                                        <h5> Email</h5>
+                                        <p>lorem@lorem.com</p>  
+                                    </div>
+                                             
+                                </div>
+                                <div class="container-item flex-row-container contact-info_item">
+                                    <div class="container-item contact-info_img">
+                                        <img src="{% static 'images/chat.png' %}">
+                                    </div>
+                                    <div class="container-item contact-info_text">
+                                        <h5> Chat</h5>
+                                        <p>Lorem ipsum</p>  
+                                    </div>         
+                                </div>       
+                                                 
+                           </div>
+                           <div class="container-item flex-column-container contact-form" >                                
+                                <input type="text" placeholder="Full name"></input>
+                                <input type="text" placeholder="Email address"></input>
+                                <input type="text" placeholder="Phone number"></input>
+                                <input type="text" placeholder="Message"></input>
+                                <div class="button">
+                                    <p>Submit</p>
+                                </div>
+                           </div>
+                    </div>                
+                </div>
+                
+            </div>
+        </div>
+        <footer class="flex-column-container hidden-item footer-wrapper" id="footer">
+            <div class="container-item flex-row-container underline" id="underline-footer1"></div>
+            <div class="container-item flex-column-container footer-container-wrapper">
+                <div class="container-item flex-row-container footer-container">
+                    <div class="container-item flex-column-container company-info">
+                        <div class="container-item flex-row-container">
+                            <div class="container-item company-info_item">
+                                    <h4 class="description-heading"> Company </h4>
+                                    <p>Why US *</p>
+                                    <p>Security *</p>
+                                    <p>About us *</p>
+                                    <p>Success stories *</p>
+                            </div>
+                            <div class="container-item company-info_item">
+                                    <h4 class="description-heading"> Platform </h4>
+                                    <p>For businesses *</p>
+                                    <p>For individuals *</p>
+                            </div>
+                            <div class="container-item company-info_item">
+                                    <h4 class="description-heading"> Relationships </h4>
+                                    <p>Events *</p>
+                                    <p>Webiners *</p>
+                            </div>
+                            <div class="container-item company-info_item">
+                                    <h4 class="description-heading"> Resources </h4>
+                                    <p>Documentation *</p>
+                                    <p>Intergration *</p>
+                            </div>
+                        </div>
+                        <div class="container-item company-info_item under-construction">
+                                <p>* Page under construction</p>
+                        </div>
+                        
+                        <div class="container-item flex-row-container">
+                            <div class="container-item" id="payment-methods">
+                                <p> Payment Methods </p>
+                                <img src="{% static 'images/visa-logo.png' %}">
+                                <img src="{% static 'images/mastercard-logo.png' %}">
+                                <img src="{% static 'images/paypall.webp' %}">
+                                <img src="{% static 'images/lipa-na-mpesa.png' %}">
+                                <img src="{% static 'images/aitell-money.png' %}">
+                            </div>
+                        </div>
+                    </div>  
+                
+                </div>
+            </div>
+            <div class="container-item flex-row-container underline" id="underline-footer2"> </div>
+            <div class="container-item copyright">
+                <p>Copyright © 2019 Eskolare Negócios Digitais Ltda. Me - CNPJ: 28.180.616/0001-00 </p>
+                <p>Endereço: Alameda Vicente Pinzon, 54 - Vila Olimpia, São Paulo/SP, CEP 04547-130</p>
+            </div>
+        </footer>
+        <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
